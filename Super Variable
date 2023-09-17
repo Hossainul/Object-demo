@@ -1,0 +1,20 @@
+class List {
+    public static void main(String[] args) {
+        Object[] interesting = new Object[3];
+
+        interesting[0] = "Hossainul Islam"; // String
+        interesting[1] = 24;  // integer
+       
+        // Convert it's in another object and then print it as an instance of property
+
+        for(Object example : interesting) {
+            if(example instanceof String) {
+                System.out.println("Name :" + example);
+            }else if(example instanceof Integer) {
+                System.out.println("Age :" + example);
+
+            }
+           
+        }
+    }
+}
